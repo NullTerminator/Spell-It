@@ -1,0 +1,21 @@
+<template>
+  <require from="./word-report"></require>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <word-report></word-report>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Congratulations ${name}!</h2>
+        <br/>
+        <h3 class="text-center">Final score: ${score}</h3>
+        <br/>
+        <h3 class="text-center">Best streak: ${best_streak}</h3>
+        <br/>
+        <button click.trigger="new_game()" class="btn btn-success" style="width: 100%">New Game</button>
+        <br/>
+      </div>
+      <div class="col-md-4">
+      </div>
+</template>

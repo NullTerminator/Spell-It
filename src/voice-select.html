@@ -1,0 +1,8 @@
+<template>
+  <label>
+    Select Voice:
+    <select value.bind="voice">
+      <option repeat.for="voice of voices" model.bind="voice">${voice.name}</option>
+    </select>
+  </label>
+</template>

@@ -1,0 +1,43 @@
+<template>
+  <require from="./word-speller"></require>
+  <require from="./scoreboard"></require>
+  <require from="./remaining-words"></require>
+  <require from="./encouragement"></require>
+  <require from="./points-earned"></require>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <scoreboard></scoreboard>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <remaining-words></remaining-words>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p class="lead text-center">Spell each word correctly 3 times.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <word-speller></word-speller>
+
+          <br/>
+
+          <points-earned></points-earned>
+      </div>
+      <div class="col-md-4">
+        <encouragement></encouragement>
+      </div>
+    </div>
+  </div>
+</template>
